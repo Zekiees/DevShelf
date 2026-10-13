@@ -1,0 +1,84 @@
+
+/* DevShelf Lesson Pages */
+
+.lesson-page .lesson-content {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.lesson-page .lesson-section {
+    margin-bottom: 28px;
+    padding: 26px;
+    background: var(--card-bg, #ffffff);
+    border: 1px solid var(--border-color, #e5e7eb);
+    border-radius: 14px;
+}
+
+.lesson-page .lesson-section h2 {
+    margin: 0 0 14px;
+    font-size: 1.35rem;
+}
+
+.lesson-page .lesson-section h3 {
+    margin: 22px 0 10px;
+    font-size: 1rem;
+}
+
+.lesson-page .lesson-section p {
+    line-height: 1.8;
+    overflow-wrap: anywhere;
+}
+
+.lesson-page pre {
+    margin: 16px 0;
+    padding: 20px;
+    overflow-x: auto;
+    background: #171923;
+    color: #e5e7eb;
+    border-radius: 10px;
+    font-size: 0.92rem;
+    line-height: 1.7;
+    tab-size: 4;
+}
+
+.lesson-page pre code {
+    font-family: Consolas, "Courier New", monospace;
+    white-space: pre;
+}
+
+.lesson-page .lesson-actions {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 14px;
+    margin: 28px 0;
+}
+
+.lesson-page #saveStatus {
+    font-size: 0.9rem;
+}
+
+.lesson-page #saveLessonButton {
+    cursor: pointer;
+    font: inherit;
+}
+
+.lesson-page #returnLink {
+    display: inline-block;
+    margin-bottom: 32px;
+}
+
+@media (max-width: 600px) {
+    .lesson-page .lesson-section {
+        padding: 18px;
+    }
+
+    .lesson-page .lesson-section h2 {
+        font-size: 1.2rem;
+    }
+
+    .lesson-page pre {
+        padding: 14px;
+        font-size: 0.82rem;
+    }
+}

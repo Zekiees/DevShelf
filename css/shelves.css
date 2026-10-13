@@ -1,0 +1,92 @@
+.shelf-header{
+    padding:70px 0 45px;
+    border-bottom:1px solid #1d2630
+}
+
+.breadcrumb{
+    display:flex;
+    gap:8px;
+    margin-bottom:25px;
+    color:#596572;
+    font-size:13px
+}
+
+.breadcrumb a:hover{color:#4da3ff}
+
+.shelf-title{
+    display:flex;
+    align-items:center;
+    gap:20px
+}
+
+.shelf-title .shelf-icon{flex-shrink:0}
+
+.shelf-title h1{
+    font-size:46px;
+    letter-spacing:-2px
+}
+
+.shelf-description{
+    color:#7f8b97;
+    max-width:650px;
+    margin-top:10px
+}
+
+.books-section{padding:55px 0}
+
+.books-section h2{
+    font-size:26px;
+    margin-bottom:25px
+}
+
+.book-grid{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:16px
+}
+
+.book{
+    background:#111820;
+    border:1px solid #202b36;
+    border-radius:9px;
+    padding:24px
+}
+
+.book-number{
+    color:#4da3ff;
+    font-size:12px;
+    font-weight:700;
+    margin-bottom:12px
+}
+
+.book h3{
+    font-size:20px;
+    margin-bottom:15px
+}
+
+.lesson-list{
+    list-style:none;
+    border-top:1px solid #202b36
+}
+
+.lesson-list li{
+    border-bottom:1px solid #202b36
+}
+
+.lesson-list a{
+    display:flex;
+    justify-content:space-between;
+    gap:15px;
+    padding:12px 0;
+    color:#8d99a6;
+    font-size:14px
+}
+
+.lesson-list a:hover{color:#fff}
+
+.lesson-list span{color:#4da3ff}
+
+@media(max-width:700px){
+    .book-grid{grid-template-columns:1fr}
+    .shelf-title h1{font-size:38px}
+}

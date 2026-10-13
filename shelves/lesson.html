@@ -1,0 +1,104 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Learn programming with DevShelf lessons and examples.">
+    <title>Lesson | DevShelf</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/shelves.css">
+    <link rel="stylesheet" href="../css/books.css">
+</head>
+<body>
+
+<header class="site-header">
+    <div class="container header-inner">
+        <a href="../index.html" class="brand">
+            <span class="brand-mark">&lt;/&gt;</span>
+            <span>
+                <strong>DevShelf</strong>
+                <small>Built by a student, for students.</small>
+            </span>
+        </a>
+
+        <nav class="main-nav">
+            <a href="../index.html#home">Home</a>
+            <a href="../index.html#learn" class="active">Learn</a>
+            <a href="../index.html#questions">Questions</a>
+            <a href="../index.html#learn">Library</a>
+        </nav>
+    </div>
+</header>
+
+<main class="lesson-page">
+    <section class="shelf-header">
+        <div class="container">
+            <div class="breadcrumb">
+                <a href="../index.html">DevShelf</a>
+                <span>/</span>
+                <a id="shelfLink" href="html.html">HTML</a>
+                <span>/</span>
+                <span>Lesson</span>
+            </div>
+
+            <a id="backLink" href="html.html" class="back-button">
+                ← Back to shelf
+            </a>
+
+            <p class="eyebrow" id="lessonCategory">PROGRAMMING LESSON</p>
+            <h1 id="lessonTitle">Loading lesson...</h1>
+            <p id="lessonIntro" class="shelf-description"></p>
+        </div>
+    </section>
+
+    <section class="books-section">
+        <div class="container lesson-content">
+            <article class="lesson-section">
+                <h2>What you'll learn</h2>
+                <p id="lessonExplanation"></p>
+            </article>
+
+            <article class="lesson-section">
+                <h2>Example</h2>
+                <pre><code id="lessonCode"></code></pre>
+                <h3>Expected output</h3>
+                <pre><code id="lessonOutput"></code></pre>
+            </article>
+
+            <article class="lesson-section">
+                <h2>Try it yourself</h2>
+                <p id="lessonPractice"></p>
+            </article>
+
+            <article class="lesson-section">
+                <h2>Key takeaway</h2>
+                <p id="lessonSummary"></p>
+            </article>
+
+            <div class="lesson-actions">
+                <button id="saveLessonButton" class="back-button" type="button">
+                    Save to Library
+                </button>
+                <span id="saveStatus" role="status"></span>
+            </div>
+
+            <a id="returnLink" href="html.html" class="back-button">
+                ← Return to shelf
+            </a>
+        </div>
+    </section>
+</main>
+
+<footer class="site-footer">
+    <div class="container footer-inner">
+        <span>DevShelf</span>
+        <span>Programming knowledge built for students.</span>
+    </div>
+</footer>
+
+<script src="../js/app.js"></script>
+<script src="../js/lessons.js"></script>
+</body>
+</html>

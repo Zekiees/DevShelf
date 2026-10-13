@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="DevShelf — programming knowledge built by a student, for students.">
+    <title>DevShelf — Programming Knowledge for Students</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+    <div class="container header-inner">
+        <a href="#home" class="brand">
+            <span class="brand-mark">&lt;/&gt;</span>
+            <span>
+                <strong>DevShelf</strong>
+                <small>Built by a student, for students.</small>
+            </span>
+        </a>
+
+        <nav class="main-nav">
+            <a href="#home">Home</a>
+            <a href="#learn">Learn</a>
+            <a href="#questions">Questions</a>
+            <button id="libraryButton" class="nav-button">Library</button>
+        </nav>
+    </div>
+</header>
+
+<main>
+
+    <!-- HOME -->
+    <section id="home" class="hero">
+        <div class="container hero-grid">
+
+            <div class="hero-content">
+                <p class="eyebrow">PROGRAMMING KNOWLEDGE, WITHOUT THE NOISE</p>
+
+                <h1>
+                    Learn code.<br>
+                    <span>Build something.</span>
+                </h1>
+
+                <p class="hero-text">
+                    Short explanations, practical examples, and quick references
+                    for students learning to program.
+                </p>
+
+                <div class="hero-actions">
+                    <a href="#learn" class="button primary">Start learning</a>
+                    <button id="findTopicButton" class="button secondary">
+                        Find a topic
+                    </button>
+                </div>
+            </div>
+
+            <div class="code-window">
+                <div class="window-bar">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <small>hello.java</small>
+                </div>
+
+                <pre><code>public class Hello {
+    public static void main(String[] args) {
+        System.out.println("Hello, DevShelf!");
+    }
+}</code></pre>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- LEARN / SHELVES -->
+    <section id="learn" class="section">
+        <div class="container">
+
+            <div class="section-heading">
+                <div>
+                    <p class="eyebrow">LEARN</p>
+
+                    <h2>Explore the shelves.</h2>
+
+                    <p class="section-description">
+                        Choose a programming shelf and explore its books and lessons.
+                    </p>
+                </div>
+
+                <div class="learn-search">
+                    <input
+                        type="search"
+                        id="searchInput"
+                        placeholder="Search lessons, topics, or languages..."
+                        aria-label="Search lessons, topics, or languages"
+                    >
+                </div>
+            </div>
+
+
+            <!-- SHELF CARDS -->
+            <div class="shelves-grid">
+
+                <!-- JAVA -->
+                <article class="shelf-card">
+                    <div class="shelf-icon">☕</div>
+
+                    <p class="shelf-language">PROGRAMMING</p>
+
+                    <h3>Java</h3>
+
+                    <p>
+                        Learn Java programming from basic concepts
+                        to more advanced topics.
+                    </p>
+
+                    <a href="shelves/java.html" class="text-button">
+                        View shelf →
+                    </a>
+                </article>
+
+
+                <!-- HTML -->
+                <article class="shelf-card">
+                    <div class="shelf-icon">🌐</div>
+
+                    <p class="shelf-language">WEB</p>
+
+                    <h3>HTML</h3>
+
+                    <p>
+                        Learn how webpages are structured using HTML.
+                    </p>
+
+                    <a href="shelves/html.html" class="text-button">
+                        View shelf →
+                    </a>
+                </article>
+
+
+                <!-- CSS -->
+                <article class="shelf-card">
+                    <div class="shelf-icon">🎨</div>
+
+                    <p class="shelf-language">WEB</p>
+
+                    <h3>CSS</h3>
+
+                    <p>
+                        Learn how webpages are styled, arranged,
+                        and made responsive.
+                    </p>
+
+                    <a href="shelves/css.html" class="text-button">
+                        View shelf →
+                    </a>
+                </article>
+
+
+                <!-- JAVASCRIPT -->
+                <article class="shelf-card">
+                    <div class="shelf-icon">⚡</div>
+
+                    <p class="shelf-language">WEB</p>
+
+                    <h3>JavaScript</h3>
+
+                    <p>
+                        Learn programming logic and add interaction
+                        to webpages.
+                    </p>
+
+                    <a href="shelves/javascript.html" class="text-button">
+                        View shelf →
+                    </a>
+                </article>
+
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- QUESTIONS -->
+    <section id="questions" class="section question-section">
+        <div class="container">
+
+            <div class="question-content">
+                <p class="eyebrow">QUESTION INBOX</p>
+
+                <h2>Can't find what you need?</h2>
+
+                <p class="section-description">
+                    Send a programming question or topic you would like
+                    to see added to DevShelf.
+                </p>
+
+                <form id="questionForm" class="question-form">
+
+                    <label for="nameInput">Name</label>
+
+                    <input
+                        type="text"
+                        id="nameInput"
+                        placeholder="Optional"
+                    >
+
+
+                    <label for="questionInput">
+                        Question or topic
+                    </label>
+
+                    <textarea
+                        id="questionInput"
+                        placeholder="Example: How does a Java Scanner work?"
+                        required
+                    ></textarea>
+
+
+                    <button type="submit" class="button primary">
+                        Submit question
+                    </button>
+
+                    <p id="questionStatus" class="form-status"></p>
+
+                </form>
+            </div>
+
+        </div>
+    </section>
+
+</main>
+
+
+<!-- FOOTER -->
+<footer class="site-footer">
+    <div class="container footer-inner">
+        <span>DevShelf</span>
+        <span>Programming knowledge built for students.</span>
+    </div>
+</footer>
+
+
+<!-- LIBRARY DRAWER -->
+<aside
+    id="libraryDrawer"
+    class="library-drawer"
+    aria-hidden="true"
+>
+    <div class="drawer-header">
+
+        <div>
+            <p class="eyebrow">YOUR LIBRARY</p>
+            <h2>Saved lessons</h2>
+        </div>
+
+        <button
+            id="closeLibrary"
+            class="close-button"
+            aria-label="Close library"
+        >
+            ×
+        </button>
+
+    </div>
+
+    <div id="libraryList" class="library-list"></div>
+</aside>
+
+
+<!-- LIBRARY OVERLAY -->
+<div id="drawerOverlay" class="drawer-overlay hidden"></div>
+
+
+<!-- LESSON MODAL -->
+<div
+    id="lessonModal"
+    class="modal hidden"
+    role="dialog"
+    aria-modal="true"
+    aria-labelledby="modalTitle"
+>
+    <div class="modal-content">
+
+        <button
+            id="closeModal"
+            class="close-button"
+            aria-label="Close lesson"
+        >
+            ×
+        </button>
+
+        <p id="modalLabel" class="eyebrow"></p>
+
+        <h2 id="modalTitle"></h2>
+
+        <div id="modalBody" class="lesson-body"></div>
+
+    </div>
+</div>
+
+
+<script src="js/app.js"></script>
+
+</body>
+</html>
